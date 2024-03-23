@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Homepage</title>
+</head>
+<body>
+  <header>
+    <h1>Enter LinkedIn Profile URL:</h1>
+    <form id="linkedin-form">
+      <input type="text" id="linkedin-profile-url" name="linkedin-profile-url" placeholder="Paste LinkedIn Profile URL here" required>
+      <button type="submit">Explore</button>
+    </form>
+  </header>
+  <main>
+    <div class="welcome-container">
+      <div class="welcome-text">
+        <h1>Welcome</h1>
+        <p>Discover interesting insights and connections!</p>
+      </div>
+    </div>
+    <div class="loading-container">
+      <div class="loading-profile"></div>
+    </div>
+    <div class="intro-video">
+      <video autoplay loop muted>
+        <source src="intro.mp4" type="video/mp4">
+      </video>
+    </div>
+  </main>
+  <footer>
+    <p>Made by your name</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

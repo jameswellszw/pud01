@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    background-color: hsl(215, 50%, 10%);
+    color: hsl(0, 0%, 100%);
+  }
+  
+  header {
+    padding: 2rem;
+    background-color: hsl(215, 50%, 20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px hsl(215, 50%, 30%);
+  }
+  
+  header form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  
+  header input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: hsl(215, 50%, 30%);
+    color: hsl(0, 0%, 100%);
+    text-shadow: none;
+  }
+  
+  header input::placeholder {
+    color: hsl(215, 50%, 50%);
+  }
+  
+  header button {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: hsl(215, 50%, 40%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  header button:hover {
+    background-color: hsl(215, 50%, 50%);
+    color: hsl(215, 50%, 40%);
+  }
+  
+  .welcome-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  transform: translate(-50%, -50%);
+    width: 50%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .welcome-text {
+    animation: fade-in 1s ease;
+  }
+  
+  .loading-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loading-profile {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: hsl(215, 50%, 30%);
+    background-image: linear-gradient(0.45turn, hsl(198, 50%, 40%), hsl(
